@@ -1,0 +1,157 @@
+
+  /* Global Styles */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+
+  /* Wrapper and Layout */
+  #wrapper {
+    display: flex;
+  }
+
+  #sidebar-wrapper {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #343a40;
+    color: #fff;
+    transition: width 0.3s ease;
+  }
+
+  #sidebar-wrapper.collapsed {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .sidebar-heading {
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #2c3136;
+    border-bottom: 1px solid #444;
+  }
+
+  .list-group-item {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .list-group-item:hover {
+    background-color: #495057;
+  }
+
+  #page-content-wrapper {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* Top Navigation Bar */
+  .navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+  }
+
+  .nav-link {
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+
+  .dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
+
+  /* Page Content */
+  #content {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #555;
+    line-height: 1.6;
+  }
+
+  code {
+    background-color: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+
+  /* Alerts */
+  .alert {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .alert-primary {
+    background-color: #e9f5ff;
+    color: #004085;
+    border: 1px solid #b8daff;
+  }
+
+  .alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+  }
+
+  /* Products Section */
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  /* Button */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
