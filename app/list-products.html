@@ -1,35 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Cards</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <style>
+    /* Global Styles */
+    .card {
+      width: 18rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1rem; /* Add spacing between cards */
+    }
+
+    .card-img-container {
+      height: 200px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+      font-size: 0.875rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .price {
+      font-size: 1.25rem;
+      color: #333;
+    }
+
+    .card-footer {
+      padding: 0.75rem 1rem;
+      border-top: 1px solid #ddd;
+      background-color: #f8f9fa;
+    }
+
+    .btn-sm {
+      font-size: 0.875rem;
+    }
+  </style>
 </head>
 <body>
-
-
-    <div class="card" style="width: 18rem;">
-        <img src="app/assets/images/pexels-yaazhini-17307532.jpg" class="card-img-top" alt="Product Image">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <div class="d-flex justify-content-between align-items-center">
-                  <span class="h5 mb-0">$99.99</span>
-                  <div>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-half text-warning"></i>
-                      <small class="text-muted">(4.5)</small>
-                  </div>
-              </div>
+  <!-- Card 1: Lighter -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/lighter.jpg" class="card-img-top" alt="Zippo Lighter">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Zippo Lighter</h5>
+      <p class="card-text">
+        A classic windproof lighter with a durable metal casing. Perfect for outdoor adventures.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$19.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star text-warning"></i>
+          <small class="text-muted">(4.0)</small>
         </div>
-        <div class="card-footer d-flex justify-content-between bg-light">
-              <button class="btn btn-primary btn-sm">Add to Cart</button>
-              <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
-          </div>
       </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 2: Camera 1 -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/camera-1.jpg" class="card-img-top" alt="DSLR Camera">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">DSLR Camera</h5>
+      <p class="card-text">
+        Capture stunning photos with this high-resolution DSLR camera. Ideal for professional photographers.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$599.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          <small class="text-muted">(4.5)</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 3: Camera 2 -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/camera-2.jpg" class="card-img-top" alt="Mirrorless Camera">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Mirrorless Camera</h5>
+      <p class="card-text">
+        Compact and lightweight, this mirrorless camera delivers exceptional image quality.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$799.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <small class="text-muted">(5.0)</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 4: Keyboard -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/keyboard.jpg" class="card-img-top" alt="Mechanical Keyboard">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Mechanical Keyboard</h5>
+      <p class="card-text">
+        A high-performance mechanical keyboard with RGB lighting for gamers and typists.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$89.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          <small class="text-muted">(4.5)</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 5: Lens 1 -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/lens-1.jpg" class="card-img-top" alt="Wide-Angle Lens">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Wide-Angle Lens</h5>
+      <p class="card-text">
+        Expand your photography with this wide-angle lens. Perfect for landscapes and architecture.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$299.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star text-warning"></i>
+          <small class="text-muted">(4.0)</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 6: Lens 2 -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/lens-2.jpg" class="card-img-top" alt="Telephoto Lens">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Telephoto Lens</h5>
+      <p class="card-text">
+        Capture distant subjects with this high-quality telephoto lens. Great for wildlife photography.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$499.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          <small class="text-muted">(4.5)</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 7: Lens 3 -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/lens-3.jpg" class="card-img-top" alt="Macro Lens">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Macro Lens</h5>
+      <p class="card-text">
+        Explore the world of close-up photography with this versatile macro lens.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$399.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <small class="text-muted">(5.0)</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 8: Makeup 1 -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/makeup-1.jpg" class="card-img-top" alt="Makeup Kit">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Makeup Kit</h5>
+      <p class="card-text">
+        A complete makeup kit with everything you need for a flawless look.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$49.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star text-warning"></i>
+          <small class="text-muted">(4.0)</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 9: Makeup 2 -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/makeup-2.jpg" class="card-img-top" alt="Lipstick Set">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Lipstick Set</h5>
+      <p class="card-text">
+        A set of 6 vibrant lipsticks to match any outfit or occasion.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$29.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          <small class="text-muted">(4.5)</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 10: Makeup 3 -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/makeup-3.jpg" class="card-img-top" alt="Eyeshadow Palette">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Eyeshadow Palette</h5>
+      <p class="card-text">
+        A versatile eyeshadow palette with 12 shades for day and night looks.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$34.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <small class="text-muted">(5.0)</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 11: Plant -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/plant.jpg" class="card-img-top" alt="Indoor Plant">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Indoor Plant</h5>
+      <p class="card-text">
+        A beautiful indoor plant to brighten up your living space. Low maintenance and air-purifying.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$24.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star text-warning"></i>
+          <small class="text-muted">(4.0)</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 12: Vegie 1 -->
+  <div class="card">
+    <div class="card-img-container">
+      <img src="assets/images/vegie-1.jpg" class="card-img-top" alt="Fresh Vegetables">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Fresh Vegetables</h5>
+      <p class="card-text">
+        A bundle of fresh, organic vegetables for a healthy and nutritious diet.
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="h5 mb-0 price">$14.99</span>
+        <div>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          <small class="text-muted">(4.5)</small>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+      <button class="btn btn-primary btn-sm">Add to Cart</button>
+      <button class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-heart"></i>
+      </button>
+    </div>
+  </div>
 </body>
 </html>
